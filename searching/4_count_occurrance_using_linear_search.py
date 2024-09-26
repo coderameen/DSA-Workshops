@@ -15,3 +15,7 @@ def countOccurr(arr,x):
 arr = [10,20,20,20,20,20,20,20,30,30]
 x = 30
 print(countOccurr(arr,x))
+
+#O(n)
+
+#o(log(n)) binary search
