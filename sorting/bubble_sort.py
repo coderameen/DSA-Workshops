@@ -8,3 +8,9 @@ for i in range(n):
             arr[j],arr[j+1] = arr[j+1],arr[j]
             
 print(arr)
+
+'''
+1st swap = [5,9,2,1]
+2nd swap = [5,2,9,1]
+3rd swap = [5,2,1,9]
+'''
