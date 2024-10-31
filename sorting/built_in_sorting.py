@@ -14,7 +14,7 @@ print(arr1)
 
 
 myarr = [[1,4],[1,3],[9,5],[2,0],[6,4]]
-# myarr.sort()#sort based on 1st index
+# myarr.sort()#sort based on 0st index
 # print(myarr)
 
 
