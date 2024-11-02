@@ -335,3 +335,60 @@ for i,items in enumerate(l):
     
     
 #function vs methods
+
+def mysum(a,b):
+    return a+b
+res = mysum(10,40)
+print("The result is : ",res)
+
+#default argument
+def mysum(a,b,c=100):
+    return a+b+c
+print(mysum(10,20,50))
+
+
+#multi argument
+def mysum(*tup):
+    # print(sum(tup))
+    # print(list(tup))
+    return sum(tup)
+    
+    
+res = mysum(10,20,30,50,70,70,80,90,100)
+print(res)
+
+
+#change the item in list, write a function
+l = [1,2,3,4,5,6]
+# i = 2
+# ele = 300
+# l[i] = 300
+# print(l)
+
+
+l = [1,2,3,4,5,6]
+def changer(i,ele,l):
+    l[i] = ele
+
+changer(0,100,l)
+print(l)
+print(*l)
+
+
+
+#note, int is a immutable
+x = 20#int
+def changer(x):
+    x = 100000
+    return x
+
+print(changer(x))
+print(x)
+
+
+#error handling
+try:
+    x = 3/0
+    print(x)
+except:
+    print("Error bhai!!")
