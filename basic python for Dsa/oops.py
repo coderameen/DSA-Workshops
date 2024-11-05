@@ -167,3 +167,71 @@ c2 = Child2()
 c2.pdisplay()
 c3 = Child3()
 c3.pdisplay()
+
+
+#Encapsulation: wrapping up of data/binding data in a single entity or class
+#ex:Bank management system,finance sectors, cyber security, sensitive info hide
+#we can achieve encapsulation using access modifiers(Public,protected,private)
+'''
+_ => protectec
+__ => private
+'''
+#NOTE private variable can be access only inside the method
+class Encap:
+    # amount = 100#public
+    # _amount = 1000#protected
+    __amount = 100000 #private
+    def check_balance(self, isvlaidUser):
+        if isvlaidUser == True:
+            print("The amount balance is:",self.__amount)
+        else:
+            print("Invalid user")
+        
+c1 = Encap()
+# print(c1._amount)
+# print(c1.__amount)#we can't  Bcoz its a private value
+user = False
+c1.check_balance(user)
+
+
+#Polymorphism: implementing same thing in a different way
+#we can achieve polymorphism using overloading and overriding
+#overloading: 1. operator overloading 2.method overloading
+#1.operator overloading:
+print(10+20)#here '+' acting as addition wrt integers
+print('Mohammed ' + 'Sanaan')#here '+' acting as concatination wrt string
+
+
+print(10*2)#'*' acting as multiplication wrt integers
+print([1,2,3]*3)#'*' acting as replication wrt list/array
+
+#method overloading
+def add():
+    return 10 + 50
+print(add())
+
+def add(a,b):
+    return a+b
+
+print(add(70,70))
+
+def add(a,b,c):
+    return a+b+c
+print(add(10,20,30))
+
+def add(a,b,z=100):
+    return a+b+z
+print(add(10,20))
+
+#overrinding
+class Parent:
+    def display(self):
+        print("This is parent property")
+        
+class Child(Parent):
+    def display(self):
+        super().display()
+        print("This is child property")
+        
+c1 = Child()
+c1.display()
