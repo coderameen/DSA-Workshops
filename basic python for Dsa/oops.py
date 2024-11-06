@@ -235,3 +235,25 @@ class Child(Parent):
         
 c1 = Child()
 c1.display()
+
+#abstraction: showing essential details by Hiding implementation details
+#ex: setup file download and install
+
+'''
+1.abstract class:a class if it contains abstract method. also it is inherited using ABC
+2.abstract method:a method which is declared but not defined.
+NOTE: To define abstract method. we can define in concrete class
+NOTE: We can't create object for abstract class. So we can create object using concrete class
+'''
+from abc import ABC,abstractmethod
+class MyAbsClass(ABC):
+    @abstractmethod
+    def abs_method_sanaan(self):
+        pass
+class concreteClass(MyAbsClass):
+    def abs_method_sanaan(self):
+        print("i have defined the abstract method!!!")
+            
+obj = concreteClass()
+obj.abs_method_sanaan()        
+    
