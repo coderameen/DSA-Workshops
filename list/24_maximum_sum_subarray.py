@@ -20,14 +20,16 @@ note:Note if we have all +ve elements, sum of all element. if it has -ve element
 '''
 * travers elment from left to right for every element find the maximum sum of sub array 
 '''
-
-def maxSum(l,n):
-    res = l[0]
-    maxEnding = l[0]
+#Kadane Alogrithm to solve sum of subarray
+def maxSum(arr,n):
+    res = arr[0]
+    maxEnding = arr[0]
     for i in range(1,n):
-        maxEnding = max(maxEnding+l[i],l[i])
-        res = max(maxEnding,res)
+        maxEnding = max(maxEnding + arr[i],arr[i])
+        res = max(maxEnding, res)
     return res
-l = [1,-2,3,-1,2]
-n = len(l)
-print(maxSum(l,n))
+    
+# arr = [1,-2,3,-1,2]
+arr = [-3,8,-2,4,-5,6]
+n = len(arr)
+print(maxSum(arr,n))
