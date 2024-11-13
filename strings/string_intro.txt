@@ -1,0 +1,5 @@
+String is a sequence of charracters
+-> typically used to store text data, like W/R in files
+-> Typically small set of charracters
+->character 'A' to 'Z' are stored as values from 65 to 90(ASCII)
+->character 'a' to 'z' are stored as values from 97 to 122(ASCII)
