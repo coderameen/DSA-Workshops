@@ -1,0 +1,27 @@
+>Stack is a linear data stracture and it works like a box which is closed at one end
+>The insertion operation on stack is called as push operation
+>the deletion operation on stack is called as pop operation
+
+
+
+Stack operation
+1.isEmplty(): returns ture if stack is emplty else false
+2.push(x)
+3.pop()
+4.peak():return the top most item from stack
+5.size(): return the size of the stack
+
+
+Two corner conditions of stack operation
+1.underflow(): when pop() or peak() called on empty stack
+2.overflow: when push called on full stack
+NOTE: we need to halde this error using exception
+
+
+Stack in python(IMPLEMENT) 4 ways:
+1.using List/Array
+2.using collections.deque
+3.using queue.LIFOQueue(not preferrable)
+4.using linked list 
+NOTE: Generally we use List/Collection.deque or linked list
+
