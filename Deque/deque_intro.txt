@@ -1,0 +1,29 @@
+Deque: " It stands for doubly ended queue"
+>In deque we have 2 ends front and rear. we cand do insertion and deleteion from both the ends.
+> deque is mutable
+
+
+
+The are 4 operations
+1. Insert front
+2. Delete front
+3. Insert rear
+4. Delete rear
+
+
+Additional operations:
+getFront(): returns the front item
+getRear(): return the rear item
+isFull(): return True if deque is full else False
+isEmplty(): return True if deque is isEmplty
+size(): returns size of deque
+
+Application of Deque
+1. A deque can be used as both sstack and queue
+2. Implementing a Priority Queue with two type of Priority
+3. Max and min of all subarrys of size K in an array
+
+Deque implementation:
+1. Collections.deque 
+2. Array/list
+3. Linked List
