@@ -36,3 +36,20 @@ def isZeroSum(l):
 # l = [1,4,13,-3,-10,5]
 l = [10,55,67,34]
 print(isZeroSum(l))
+
+#naive approach
+print("--------")
+def isSubSum(arr,sum):
+    for i in range(len(arr)):
+        curr = 0
+        for j in range(i,len(arr)):
+            curr += arr[j]
+            if curr == sum:
+                return True
+            
+    return False
+
+
+# arr = [1,4,13,-3,-10,5]
+arr = [10,55,67,34]
+print(isSubSum(arr,sum=0))
