@@ -7,6 +7,8 @@
 output:
 3
 
+
+idea: max(left_hight, right_high) + root
 '''
 
 class Node:
@@ -33,5 +35,6 @@ Root.left.left = Node(40)
 Root.right.left = Node(50)
 Root.right.right = Node(60)
 # Root.left.left.left = Node(100)
+
 
 print(height(Root))
