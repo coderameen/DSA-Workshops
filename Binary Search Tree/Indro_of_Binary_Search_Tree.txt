@@ -1,0 +1,11 @@
+#BINARY SEARCH TREE
+Def: In BST, for every node, key in left side are smaller and key in right side are greater
+> In BST, Data is organised in such a way so that when you are searching an item, we can skip half of the items.
+> All keys are typically consider as distinct
+> like linked list, it is a linked data structure
+            50
+        30      70
+    10     40 60    80
+
+NOTE: Most of the operation in BST such as insert,delete and searching and finding closest of all in O(h), where h=> hight of BST
+NOTE2: Height of BST matters a lot
