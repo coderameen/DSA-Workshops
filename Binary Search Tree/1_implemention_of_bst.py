@@ -1,3 +1,4 @@
+#implementation of binary search tree using linked list apprach
 class Node:
     def __init__(self,key):
         self.key = key
