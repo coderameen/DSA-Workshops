@@ -32,3 +32,5 @@ r = insert(r,70)
 r = insert(r,60)
 r = insert(r,80)
 inorder(r)
+
+
